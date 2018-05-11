@@ -66,7 +66,10 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '()
+   dotspacemacs-additional-packages
+   '(
+     reverse-im
+     )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.
@@ -339,6 +342,10 @@ you should place your code here."
   (setq gc-cons-threshold (* 256 1024 1024))
 
   (setq python-shell-interpreter "~/anaconda3/bin/python3")
+
+  (use-package reverse-im
+    :config
+    (reverse-im-activate "russian-computer"))
 
 )
 
