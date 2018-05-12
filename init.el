@@ -112,7 +112,7 @@ values."
    ;; with `:variables' keyword (similar to layers). Check the editing styles
    ;; section of the documentation for details on available variables.
    ;; (default 'vim)
-   dotspacemacs-editing-style 'emacs
+   dotspacemacs-editing-style 'hybrid
    ;; If non nil output loading progress in `*Messages*' buffer. (default nil)
    dotspacemacs-verbose-loading nil
    ;; Specify the startup banner. Default value is `official', it displays
@@ -333,6 +333,7 @@ you should place your code here."
   (setq gc-cons-threshold (* 256 1024 1024))
 
   (setq python-shell-interpreter "~/anaconda3/bin/python")
+  (setq python-shell-interpreter-args "-i")
 
   )
 
