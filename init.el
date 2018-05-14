@@ -31,6 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     sql
      csv
      markdown
      php
@@ -39,13 +40,14 @@ values."
      html
      (python :variables
              python-shell-interpreter "~/anaconda3/bin/python3")
+     django
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      ivy
-      auto-completion
+     auto-completion
      ;; better-defaults
      emacs-lisp
      git
@@ -149,7 +151,7 @@ values."
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Consolas"
-                               :size 18 
+                               :size 18
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
