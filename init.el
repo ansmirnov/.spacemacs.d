@@ -343,7 +343,8 @@ you should place your code here."
 
   (setq gc-cons-threshold (* 256 1024 1024))
 
-  (setq python-shell-interpreter "~/anaconda3/bin/python3")
+  (setq python-shell-interpreter "~/anaconda3/bin/python")
+  (setq python-shell-interpreter-args "-i")
 
   (use-package reverse-im
     :config
