@@ -31,6 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     javascript
      sql
      csv
      markdown
@@ -71,6 +72,8 @@ values."
    dotspacemacs-additional-packages
    '(
      reverse-im
+     keyfreq
+     pinentry
      )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -327,6 +330,8 @@ before packages are loaded. If you are unsure, you should try in setting them in
 (setq custom-file "~/.spacemacs.d/custom.el")
 (load custom-file)
 
+
+
 )
 
 (defun dotspacemacs/user-config ()
@@ -350,5 +355,15 @@ you should place your code here."
     :config
     (reverse-im-activate "russian-computer"))
 
+  (use-package keyfreq
+    :config
+    (keyfreq-mode 1)
+    (keyfreq-autosave-mode 1)
+    )
+
+  (setenv "INSIDE_EMACS" (format "%s,comint" emacs-version))
+  (pinentry-start)
+
 )
+
 
