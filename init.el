@@ -74,6 +74,7 @@ values."
      reverse-im
      keyfreq
      pinentry
+     atomic-chrome
      )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -365,6 +366,8 @@ you should place your code here."
   (setenv "INSIDE_EMACS" (format "%s,comint" emacs-version))
   (pinentry-start)
 
+
+  (atomic-chrome-start-server)
 )
 
 
