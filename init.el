@@ -366,6 +366,12 @@ you should place your code here."
   (setenv "INSIDE_EMACS" (format "%s,comint" emacs-version))
   (pinentry-start)
 
+  (org-babel-do-load-languages
+      'org-babel-load-languages
+      '((shell . t)
+        (python . t)))
+  
+  (setq org-confirm-babel-evaluate nil)
 
   (atomic-chrome-start-server)
 )
