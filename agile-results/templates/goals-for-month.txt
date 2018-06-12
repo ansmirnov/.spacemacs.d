@@ -1,0 +1,21 @@
+* Цели месяца
+DEADLINE: <%(format "%s-%02d-%s" (calendar-extract-year (calendar-current-date)) (calendar-extract-month (calendar-current-date)) (calendar-last-day-of-month (calendar-extract-month (calendar-current-date)) (calendar-extract-year (calendar-current-date))))>
+:LOGBOOK:
+:END:
+[[file:~/.spacemacs.d/agile-results/templates/goals-for-month.txt][Поправить этот шаблон]]
+
+
+- Цели месяца, обеспечивающие работу над действительно важным в терминах "я выбираю ... потому что хочу ... и не хочу ...":
+  - [ ] Главная личная цель месяца: %?
+  - [ ] Главная служебная цель месяца:
+
+
+Как я буду обеспечивать достижение целей года:
+- 
+
+
+- Цели года, развивающие мою жизнь:
+  - [ ]
+
+
+<Всякие мотивирующие цитаты и вопросы>

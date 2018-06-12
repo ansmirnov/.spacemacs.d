@@ -370,10 +370,12 @@ you should place your code here."
       'org-babel-load-languages
       '((shell . t)
         (python . t)))
-  
+
   (setq org-confirm-babel-evaluate nil)
 
   (atomic-chrome-start-server)
+
+  (load "~/.spacemacs.d/agile-results/org-capture-templates.el")
 )
 
 
