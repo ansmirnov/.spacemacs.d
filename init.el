@@ -31,6 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     java
      javascript
      sql
      csv
@@ -75,6 +76,7 @@ values."
      keyfreq
      pinentry
      atomic-chrome
+     ob-restclient
      )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -369,7 +371,8 @@ you should place your code here."
   (org-babel-do-load-languages
       'org-babel-load-languages
       '((shell . t)
-        (python . t)))
+        (python . t)
+        (restclient . t)))
   
   (setq org-confirm-babel-evaluate nil)
 
