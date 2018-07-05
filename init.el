@@ -77,6 +77,7 @@ values."
      pinentry
      atomic-chrome
      ob-restclient
+     org2blog
      )
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -159,7 +160,7 @@ values."
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Consolas"
                                :size 18
-                               :weight normal
+                               :weight light
                                :width normal
                                :powerline-scale 1.1)
    ;; The leader key
@@ -373,6 +374,8 @@ you should place your code here."
       '((shell . t)
         (restclient . t)
         (python . t)))
+
+  (setq org-refile-use-outline-path t)
 
   (setq org-confirm-babel-evaluate nil)
 
