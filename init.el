@@ -64,7 +64,7 @@ values."
      (wakatime :variables
                wakatime-api-key  "c4490e02-1f5d-40cc-af87-16447d7892a4"
                ;; use the actual wakatime path
-               wakatime-cli-path "~/anaconda3/bin/wakatime")
+               wakatime-cli-path "wakatime")
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -382,6 +382,8 @@ you should place your code here."
   (atomic-chrome-start-server)
 
   (load "~/.spacemacs.d/agile-results/org-capture-templates.el")
+
+  (load "~/.spacemacs.d/org2blog.el")
 )
 
 
