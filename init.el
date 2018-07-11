@@ -64,7 +64,7 @@ values."
      (wakatime :variables
                wakatime-api-key  "c4490e02-1f5d-40cc-af87-16447d7892a4"
                ;; use the actual wakatime path
-               wakatime-cli-path "wakatime")
+               wakatime-cli-path "/home/noname/anaconda3/bin/wakatime")
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
